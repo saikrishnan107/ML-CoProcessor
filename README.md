@@ -194,16 +194,6 @@ Machine-Learning-CoProcessor/
 
 ---
 
-## Publication
-
-**Evaluation of Fixed-Pipeline FPGA Accelerator for LeNet-5 Inference on Handwritten Character Recognition**
-
-Presented at:
-
-**6th International Conference on Emerging Techniques in Computational Intelligence (ICETCI 2026)**
-
----
-
 ## Authors
 
 - Sai Krishnan S.

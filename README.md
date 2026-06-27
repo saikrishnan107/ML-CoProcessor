@@ -153,11 +153,9 @@ The hardware implementation achieves approximately **165× acceleration** over C
 - DSP-based MAC operations
 - On-chip BRAM storage
 - Ping-pong buffering
-- Fixed-point arithmetic
+- Fixed-point arithmetic (Q.17)
 - Instruction-driven execution
 - Optimized memory hierarchy
-
----
 
 ## Repository Structure
 
@@ -165,27 +163,19 @@ The hardware implementation achieves approximately **165× acceleration** over C
 Machine-Learning-CoProcessor/
 │
 ├── rtl/
-│   ├── top.v
+│   ├── bram.v
 │   ├── pe.v
-│   ├── controller.v
-│   ├── convolution.v
-│   ├── relu.v
-│   ├── quantizer.v
-│   └── ...
+│   └── cnn.v
 │
-├── constraints/
-│   └── top.xdc
+├── wrapper module/
+│   └── custom_cnn_build.xpr
 │
 ├── testbench/
+│   └──cnn_tb.v
 │
 ├── python/
 │   ├── host.py
-│   ├── inference.py
-│   └── gui.py
-│
-├── images/
-│
-├── docs/
+│   └── inference.py
 │
 └── README.md
 ```
@@ -201,19 +191,6 @@ Machine-Learning-CoProcessor/
 - Embedded Vision
 - IoT Devices
 - Medical Diagnostics
-
----
-
-## Future Work
-
-- Support for ResNet and MobileNet
-- Dynamic Partial Reconfiguration
-- Mixed-Precision Quantization
-- Additional CNN Layers
-- Attention Mechanisms
-- Live Sensor Integration
-- Hardware Optimization
-- Hybrid Edge-Cloud Processing
 
 ---
 
@@ -233,9 +210,6 @@ Presented at:
 - Srikanth M.
 - Srimath Sukumar
 
-**Department of Electronics and Communication Engineering**
-
-**SRM Institute of Science and Technology**
 
 ---
 

@@ -174,8 +174,8 @@ Machine-Learning-CoProcessor/
 │   └──cnn_tb.v
 │
 ├── python/
-│   ├── host.py
-│   └── inference.py
+│   ├── server.py
+│   └── main.py
 │
 └── README.md
 ```
